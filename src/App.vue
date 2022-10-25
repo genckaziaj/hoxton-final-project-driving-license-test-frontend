@@ -1,0 +1,44 @@
+<template>
+  <the-navigation></the-navigation>
+  <main>
+    <router-view></router-view>
+  </main>
+  <fixed-navbar></fixed-navbar>
+</template>
+
+<script>
+import TheNavigation from "./components/TheNavigation.vue";
+import FixedNavbar from "./components/FixedNavbar.vue";
+
+export default {
+  components: {
+    TheNavigation,
+    FixedNavbar,
+  },
+};
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #3e4d5c;
+  direction: ltr;
+  font: 400 13px "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-shadow: none;
+  text-decoration: none;
+}
+</style>
